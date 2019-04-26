@@ -1,0 +1,45 @@
+{
+  "name": "jameswiens",
+  "version": "1.0.2",
+  "description": "A personal card for James Wiens (@aretecode) (alias - jameswiens)",
+  "homepage": "https://jameswiens.dev",
+  "author": "James Wiens <james@jameswiens.dev> (https://jameswiens.dev)",
+  "main": "/bin/card.js",
+  "bin": {
+    "bitandbang": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aretecode/npx-jameswiens.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jameswiens",
+    "james",
+    "wiens",
+    "dev",
+    "aretecode",
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^3.1.0",
+    "chalk": "^2.4.2",
+    "standard": "^12.0.1"
+  }
+}
